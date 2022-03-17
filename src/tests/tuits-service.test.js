@@ -145,27 +145,26 @@ describe('can retrieve all tuits with REST API', () => {
   ];
 
   // Setup data before testing
-  beforeAll( () => {
-    // Delete previous data
-    deleteUsersByUsername(mockUser.username)
-    tuitMessage.map(tuit => deleteTuitsByTuit(tuit))
-  });
+  beforeAll( () =>
+      // Delete previous data
+      Promise.all(tuitMessage.map(tuit =>
+          deleteTuitsByTuit(tuit)
+      ))
+  );
 
   // Cleanup after test
-  afterAll( () => {
-    // Delete inserted tuits/mock user
-    deleteUsersByUsername(mockUser.username)
-    tuitMessage.map(tuit => deleteTuitsByTuit(tuit))
-  });
+  afterAll( () =>
+      // Delete inserted tuits
+      Promise.all(tuitMessage.map(tuit =>
+          deleteTuitsByTuit(tuit)
+      ))
+  );
 
   test('retrieve all tuits', async () => {
     // Insert several known tuits
     const user = await createUser(mockUser)
-    tuitMessage.map(tuit =>
-        createTuit(user._id,{
-          tuit: tuit
-        })
-    )
+    tuitMessage.map((tuit =>
+        createTuit(user._id, {tuit: tuit})))
 
     // Retrieve all tuits
     const tuits = await findAllTuits();
@@ -182,5 +181,8 @@ describe('can retrieve all tuits with REST API', () => {
       const message = tuitMessage.find(message => message === tuit.tuit);
       expect(tuit.tuit).toEqual(message);
     });
+
+    // Deletes Mock User
+    deleteUsersByUsername(mockUser.username)
   });
 });

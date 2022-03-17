@@ -49,7 +49,7 @@ test('tuit list renders mocked', async () => {
   // TODO: implement this
   const mock = jest.spyOn(axios, 'get'); // Set up Mock for testing
   mock.mockImplementation(() =>
-      Promise.resolve({data: {tuits: MOCKED_TUITS}}));
+      Promise.resolve({data: {tuits: TUITS}}));
 
   const response = await findAllTuits();
   const tuits = response.tuits;
@@ -59,7 +59,7 @@ test('tuit list renders mocked', async () => {
         <Tuits tuits={tuits}/>
       </HashRouter>);
 
-  const tuit = screen.getByText(/tuit/i);
+  const tuit = screen.getByText(/charlie's tuit/i);
   expect(tuit).toBeInTheDocument();
 
   mock.mockRestore();  // restore original implementation
