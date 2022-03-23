@@ -1,4 +1,4 @@
-import * as service from "./auth-service"
+import * as service from "./services/auth-service"
 const Profile = () => {
   const navigate = useNavigate();
   const [profile, setProfile] = useState({});
