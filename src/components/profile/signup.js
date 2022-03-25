@@ -1,13 +1,12 @@
-import React from "react";
 import {useState} from "react";
-import * as service from "../../services/auth-service";
+import * as service from "../../services/security-service";
 import {useNavigate} from "react-router-dom";
 
 const Signup = () => {
   const [newUser, setNewUser] = useState({});
   const navigate = useNavigate();
   const signup = () =>
-      service.signup(newUser)
+      service.register(newUser)
       .then(() => navigate('/home'))
       .catch(e => alert(e));
   return (
