@@ -11,7 +11,7 @@ export const Login = () => {
       .catch(e => alert(e));
   return (
       <div>
-        <h1>Test</h1>
+        <h1>Login</h1>
         <input onChange={(e) =>
             setLoginUser({...loginUser,
               username: e.target.value})}/>
