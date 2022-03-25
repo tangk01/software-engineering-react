@@ -19,6 +19,6 @@ export const logout = (user) =>
     api.post(`${AUTH_API}/logout`, user)
     .then(response => response.data);
 
-export const login = (credentials) =>
-    api.post(`${AUTH_API}/login`, credentials)
+export const login = (user) =>
+    api.post(`${AUTH_API}/login`, user)
     .then(response => response.data);
