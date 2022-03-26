@@ -1,7 +1,7 @@
 import axios from "axios";
 // const BASE_URL = "https://cs5500-01-sp22.herokuapp.com/api";
 // const BASE_URL = "http://localhost:4000/api";
-const BASE_URL = "https://cs5500node.herokuapp.com/"
+const BASE_URL = "https://cs5500node.herokuapp.com"
     // process.env.REACT_APP_BASE_URL
 
 const AUTH_API = `${BASE_URL}/api/auth`
