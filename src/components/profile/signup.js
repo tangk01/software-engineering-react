@@ -1,8 +1,9 @@
-import React, {useState} from "react";
-import * as service from "../../services/auth-service";
+import React from "react";
 import {useNavigate} from "react-router-dom";
+import {useState} from "react";
+import * as service from "../../services/auth-service";
 
-const Signup = () => {
+export const Login = () => {
   const [loginUser, setLoginUser] = useState({});
   const navigate = useNavigate()
   const login = () =>
@@ -25,5 +26,4 @@ const Signup = () => {
         </button>
       </div>
   );
-}
-export default Signup;
+};
