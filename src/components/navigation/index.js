@@ -15,7 +15,7 @@ function Navigation() {
     {label: 'Lists', icon: 'fa-list', path: '/lists'},
     {label: 'Profile', icon: 'fa-user', path: '/profile/mytuits'},
     {label: 'More', icon: 'fa-circle-ellipsis', path: '/more'},
-    {label: 'Login', icon: 'fa-user', path: '/login'},
+    {label: 'Login', icon: 'fa-user', path: '/profile/login'},
     {label: 'Signup', icon: 'fa-user', path: '/signup'},
   ]
   return(
