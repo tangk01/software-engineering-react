@@ -1,7 +1,7 @@
 import axios from "axios";
 // const BASE_URL = "https://cs5500-01-sp22.herokuapp.com/api";
 // const BASE_URL = "http://localhost:4000/api";
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = "https://stirring-custard-0088d9.netlify.app";
 // process.env.REACT_APP_BASE_URL
 // https://cs5500node.herokuapp.com
 
