@@ -9,7 +9,7 @@ const Profile = () => {
     try {
       const user = await service.profile();
       setProfile(user);
-      // navigate('/profile/mytuits');
+      navigate('/profile/mytuits');
     } catch (e) {
       navigate('/login');
     }
