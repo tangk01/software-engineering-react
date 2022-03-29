@@ -26,9 +26,9 @@ const Profile = () => {
         <button onClick={logout}>
           Logout</button>
 
-        <Routes>
+       {/* <Routes>
           <Route path="/mytuits"
-                 element={<MyTuits/>}/>
+                 element={<MyTuits/>}/>*/}
           {/*<Route path="/tuits-and-replies"
                  element={<TuitsAndReplies/>}/>
           <Route path="/media"
