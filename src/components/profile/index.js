@@ -35,7 +35,7 @@ const Profile = () => {
                  element={<Media/>}/>
           <Route path="/mylikes"
                  element={<MyLikes/>}/>*/}
-        </Routes>
+        {/*</Routes>*/}
 
       </div>
   );
