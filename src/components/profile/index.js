@@ -2,6 +2,8 @@ import * as service from "../../services/auth-service"
 import {Route, Routes, useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 import MyTuits from "./my-tuits";
+import TuitsAndReplies from "./tuits-and-replies";
+import Media from "./media";
 
 const Profile = () => {
   const navigate = useNavigate();
