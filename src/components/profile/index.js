@@ -26,7 +26,7 @@ const Profile = () => {
         <button onClick={logout}>
           Logout</button>
 
-       {/* <Routes>
+        <Routes>
           <Route path="/mytuits"
                  element={<MyTuits/>}/>*/}
           {/*<Route path="/tuits-and-replies"
@@ -35,7 +35,7 @@ const Profile = () => {
                  element={<Media/>}/>
           <Route path="/mylikes"
                  element={<MyLikes/>}/>*/}
-        {/*</Routes>*/}
+        </Routes>
 
       </div>
   );
