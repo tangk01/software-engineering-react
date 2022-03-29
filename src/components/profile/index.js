@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import MyTuits from "./my-tuits";
 import TuitsAndReplies from "./tuits-and-replies";
 import Media from "./media";
+import MyLikes from "./my-likes";
 
 const Profile = () => {
   const navigate = useNavigate();
