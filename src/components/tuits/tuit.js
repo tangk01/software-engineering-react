@@ -3,7 +3,7 @@ import TuitStats from "./tuit-stats";
 import TuitImage from "./tuit-image";
 import TuitVideo from "./tuit-video";
 
-const Tuit = ({tuit, deleteTuit, likeTuit, dislikeTuit}) => {
+const Tuit = ({tuit, deleteTuit, likeTuit}) => {
   return(
     <li className="p-2 ttr-tuit list-group-item d-flex rounded-0">
       <div className="pe-2">
@@ -30,8 +30,6 @@ const Tuit = ({tuit, deleteTuit, likeTuit, dislikeTuit}) => {
           <TuitImage tuit={tuit}/>
         }
         <TuitStats tuit={tuit} likeTuit={likeTuit}/>
-
-        <TuitStats tuit={tuit} dislikeTuit={dislikeTuit}/>
       </div>
     </li>
   );
