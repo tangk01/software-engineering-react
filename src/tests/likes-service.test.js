@@ -3,8 +3,7 @@ import {userTogglesTuitLikes, findAllTuitsLikedByUser,
 from "../services/likes-service"
 import {
   createTuit,
-  deleteTuitsByTuit,
-  findAllTuits
+  deleteTuitsByTuit
 } from "../services/tuits-service"
 import {createUser, deleteUsersByUsername} from "../services/users-service"
 
