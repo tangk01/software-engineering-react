@@ -29,6 +29,15 @@ const Profile = () => {
         <button onClick={logout}>
           Logout</button>
 
+        <Link to="/profile/mytuits">
+          Tuits</Link>
+        <Link to="/profile/tuits-and-replies">
+          Tuits & replies</Link>
+        <Link to="/profile/media">
+          Media</Link>
+        <Link to="/profile/mylikes">
+          Likes</Link>
+
         <Routes>
           <Route path="/mytuits"
                  element={<MyTuits/>}/>*/}
