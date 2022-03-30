@@ -39,7 +39,7 @@ const Profile = () => {
         <Link to="/profile/mylikes">
           Likes</Link>
         <Link to="/profile/mydislikes">
-          Likes</Link>
+          Dislikes</Link>
 
         <Routes>
           <Route path="/mytuits"
